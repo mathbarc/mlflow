@@ -1,6 +1,6 @@
-FROM python:3.11.2-slim
+FROM python:3.12.10-slim
 
 RUN pip install psycopg2-binary && \
-    pip install mlflow[extras,auth]==3.5.1
+    pip install mlflow[extras,auth]==3.11.1
 
 ENTRYPOINT ["mlflow"]
